@@ -1,18 +1,13 @@
 import Mainheader from "./components/header/header";
 import "./mainStyle.css";
+import Home from "./pages/Home/Home";
 function App() {
   return (
-    <main className="bg-[#e8e9e8]  font-poppins">
+    <main className="bg-[#e8e9e8]  font-poppins overflow-hidden">
       <Mainheader />
-      <h1 className="text-8xl font-bold  pt-20 pl-7">
-        Full-Stack <span className="text-4xl">Web</span>
-        <br /> Developer
-      </h1>
-      <p className="text-gray-500 float-right pt-12">
-        <span>location Ethiopia</span>
-        currently contributing to open source <br /> and building websites that
-        are fun to work with.
-      </p>
+
+      <Home />
+
       <p className="pt-40">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi dolor
         aliquid id, dolorem excepturi odit illum ipsum! Consequuntur, tempore

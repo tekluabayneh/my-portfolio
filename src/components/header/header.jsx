@@ -1,29 +1,33 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import useWindowWidth from "../../utils/windowWidth";
 import MobileHeader from "./MobileHeader";
+
 const Mainheader = () => {
+  const [togggleheader, settoggleheader] = useState(false);
   const width = useWindowWidth();
   const menuRef = useRef(null);
+
+  // handelheader toggle
+  const hadelheadertoggle = () => {
+    settoggleheader(true);
+  };
 
   const handelScroll = () => {
     window.addEventListener("scroll", () => {
       let scrollTop = window.scrollY;
-
-      scrollTop > 300
-        ? (() => {
-            menuRef.current.classList.contains("hidden") &&
-              menuRef.current.classList.remove("hidden");
-            menuRef.current.classList.add("fixed");
-          })()
-        : (() => {
-            menuRef.current.classList.contains("fixed") &&
-              menuRef.current.classList.remove("fixed");
-            menuRef.current.classList.add("hidden");
-          })();
+      if (scrollTop >= 30) {
+        menuRef.current.classList.add("fixed");
+        menuRef.current.classList.remove("hidden");
+      } else {
+        menuRef.current.classList.add("hidden");
+        menuRef.current.classList.remove("fixed");
+      }
     });
   };
+
   useEffect(() => {
     handelScroll();
+
     return () => {
       window.removeEventListener("scroll", handelScroll);
     };
@@ -36,7 +40,11 @@ const Mainheader = () => {
         {width}
       </div>
 
-      <MobileHeader />
+      <MobileHeader
+        togggleheader={togggleheader}
+        settoggleheader={settoggleheader}
+        hadelheadertoggle={hadelheadertoggle}
+      />
 
       <div className="w-96 justify-end flex items-center px-16 py-2 bg-[#f6f6f6]  shadow-custom2 rounded-3xl hidden md:block">
         <ul className="w-full flex gap-8 items-center justify-center font-poppins font-light">
@@ -65,12 +73,16 @@ const Mainheader = () => {
           </li>
         </ul>
       </div>
+      <div className="md:hidden">
+        <h1 onClick={hadelheadertoggle}>menu</h1>
+      </div>
       <div
         ref={menuRef}
-        className="hidden w-14 h-14 z-10 fixed top-1 shadow-custom2 right-12 bg-white
+        className="hidden w-14 h-14 z-10 fixed top-5 shadow-custom2 right-12 bg-white
         text-black rounded-full cursor-pointer flex items-center justify-center overflow-hidden"
       >
         <h1
+          onClick={hadelheadertoggle}
           className="font-bold cursor-pointer text-sm text-center 
           text-nowrap text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"
         >
@@ -82,3 +94,13 @@ const Mainheader = () => {
 };
 
 export default Mainheader;
+//  ? (() => {
+//  menuRef.current.classList.contains("hidden") &&
+//  menuRef.current.classList.remove("hidden");
+//  menuRef.current.classList.add("fixed");
+//  })()
+//  : (() => {
+//  menuRef.current.classList.contains("fixed") &&
+//  menuRef.current.classList.remove("fixed");
+//  menuRef.current.classList.add("hidden");
+//  })();
