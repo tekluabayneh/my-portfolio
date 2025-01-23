@@ -1,0 +1,29 @@
+.text-container {
+  position: relative;
+  height: 50px; /* Adjust to fit text height */
+  overflow: hidden;
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold;
+  text-align: center;
+  perspective: 1000px; /* Creates the 3D perspective */
+}
+
+.text-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(90deg); /* Start with rotated text */
+  opacity: 0;
+  transition: transform 2s ease, opacity 0.8s ease;
+  transform-origin: center;
+}
+
+.text-item.active {
+  transform: translate(-50%, -50%) rotateX(0deg); /* Rotate to visible position */
+  opacity: 1;
+}
+
+.text-item:not(.active) {
+  transform: translate(-50%, -50%) rotateX(-90deg); /* Rotate out of view */
+  opacity: 0;
+}
