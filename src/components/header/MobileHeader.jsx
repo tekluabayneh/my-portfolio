@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { GsapMagnetic } from "../GsapMagnetic";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const MobileHeader = ({ togggleheader, settoggleheader }) => {
   const ulRef = useRef(null);
@@ -79,10 +79,17 @@ const MobileHeader = ({ togggleheader, settoggleheader }) => {
             instagram
           </span>
           <span className="capitalize font-medium -tracking-tighter md:text-sm cursor-pointer hover:translate-x-1 transition-all">
-            github
+            <Link to={"https://github.com/tekluabayneh"} target="_blank">
+              github
+            </Link>
           </span>
           <span className="capitalize font-medium -tracking-tighter md:text-sm cursor-pointer hover:translate-x-1 transition-all">
-            linkedin
+            <Link
+              to={"https://www.linkedin.com/in/teklu-abayneh"}
+              target="_blank"
+            >
+              linkedin
+            </Link>
           </span>
         </div>
       </div>
