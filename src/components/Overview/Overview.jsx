@@ -54,7 +54,7 @@ const Overview = () => {
             >
               <Link
                 target="_blank"
-                to={"https://jade-gnome-c4d4ed.netlify.app"}
+                to={"https://iridescent-sherbet-cc90d7.netlify.app"}
               >
                 view live
               </Link>
