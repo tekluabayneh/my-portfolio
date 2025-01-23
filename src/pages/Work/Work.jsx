@@ -118,7 +118,7 @@ const Work = () => {
             <GsapMagnetic>
               <button className="px-5 py-2 bg-transparent ring-1 ring-black rounded-3xl">
                 <Link
-                  to={"https://github.com/tekluabayneh/Kukandummyjson"}
+                  to={"https://github.com/tekluabayneh/my_Apple"}
                   target="_blank"
                 >
                   view on GitHub
