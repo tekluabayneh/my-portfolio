@@ -1,8 +1,49 @@
-import React from "react";
-import { useForm } from "react-hook-form";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { GsapMagnetic } from "../../components/GsapMagnetic";
-const ContactForm = () => {
+
+const ContactForm = ({ handelMessagePopUp }) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    organization: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const response = await fetch(
+      "https://formsubmit.co/a58f93d8780f55ee632041a412f8131b@gmail.com",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
+
+    if (response.ok) {
+      // alert("Form submitted successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        organization: "",
+        message: "",
+      });
+    } else {
+      alert("Form submission failed.");
+    }
+  };
+
   return (
     <section className="w-full h-auto pt-12 flex flex-col md:flex-row-reverse gap-10 pt-32">
       <div className="w-full flex flex-col gap-5 md:flex-1">
@@ -39,49 +80,76 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      <div className="w-full  w-[70%] md:h-auto">
-        <form>
+      <div className="w-full w-[70%] md:h-auto">
+        <form
+          onSubmit={handleSubmit}
+          // action="https://formsubmit.co/tekluabayneh@gmail.com" method="POST"
+        >
           <hr className="w-full h-[2px] bg-gray-400 my-12" />
-          <label className="font-medium text-gray-400 text-xl " htmlFor="name ">
-            what's your name?
+          <label className="font-medium text-gray-400 text-xl" htmlFor="name">
+            What's your name?
           </label>
           <input
-            className="bg-transparent  w-full border-none pl-5 outline-none mt-1"
+            onChange={handleChange}
+            value={formData.name}
+            name="name"
+            className="bg-transparent w-full border-none pl-5 outline-none mt-1"
             type="text"
             placeholder="John Doe"
+            required
           />
           <hr className="w-full h-[2px] bg-gray-400 my-12" />
-          <label className="font-medium text-gray-400 text-xl " htmlFor="name ">
+          <label className="font-medium text-gray-400 text-xl" htmlFor="email">
             What's your email?
           </label>
           <input
-            className="bg-transparent  w-full border-none pl-5 outline-none mt-1"
+            onChange={handleChange}
+            value={formData.email}
+            name="email"
+            className="bg-transparent w-full border-none pl-5 outline-none mt-1"
             type="email"
-            placeholder="john@doe.com "
+            placeholder="john@doe.com"
+            required
           />
           <hr className="w-full h-[2px] bg-gray-400 my-12" />
-          <label className="font-medium text-gray-400 text-xl " htmlFor="name ">
+          <label
+            className="font-medium text-gray-400 text-xl"
+            htmlFor="organization"
+          >
             What's the name of your organization?
           </label>
           <input
-            className="bg-transparent  w-full border-none pl-5 outline-none mt-1"
+            onChange={handleChange}
+            value={formData.organization}
+            name="organization"
+            className="bg-transparent w-full border-none pl-5 outline-none mt-1"
             type="text"
             placeholder="Web development"
           />
           <hr className="w-full h-[2px] bg-gray-400 my-12" />
-          <label className="font-medium text-gray-400 text-xl " htmlFor="name ">
+          <label
+            className="font-medium text-gray-400 text-xl"
+            htmlFor="message"
+          >
             Your message
           </label>
           <textarea
+            onChange={handleChange}
+            value={formData.message}
+            name="message"
             className="w-full bg-transparent border-none pl-5 mt-1 outline-none resize-none"
             id="textarea"
-            placeholder="Hello Teklu, i website web for my... "
+            placeholder="Hello Teklu, I need a website for my..."
+            required
           ></textarea>
           <hr className="w-full h-[2px] bg-gray-400 my-12" />
           {/* Submit Button */}
           <GsapMagnetic>
-            <button className="w-[clamp(9em,12vw,11em)] h-[clamp(9em,12vw,11em)] rounded-full bg-white shadow-custom2 cursor-pointer flex items-center justify-center text-lg">
-              <NavLink to="/contact">Send it!</NavLink>
+            <button
+              onClick={handelMessagePopUp}
+              className="w-[clamp(9em,12vw,11em)] h-[clamp(9em,12vw,11em)] rounded-full bg-white shadow-custom2 cursor-pointer flex items-center justify-center text-lg"
+            >
+              Send it!
             </button>
           </GsapMagnetic>
         </form>

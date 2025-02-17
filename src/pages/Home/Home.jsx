@@ -10,7 +10,9 @@ const Home = () => {
     <main>
       <section className="w-full h-5/6 relative ">
         <HeaderTitle />
-        <AnimationBall />
+        <div className="hidden md:block">
+          <AnimationBall />
+        </div>
         <div className="text-gray-500 float-right flex  items-center pt-27 px-10 flex-col z-10">
           <span className="pt-12">
             <AppsIcon

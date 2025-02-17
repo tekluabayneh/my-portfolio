@@ -74,10 +74,10 @@ const AboutBentoGrid = () => {
       <div className="p-5" ref={(el) => sectionsRef.current.push(el)}>
         <h1 className="text-4xl font-medium py-2">Future Goals:</h1>
         <p className="p-2">
-          My goal is to become the best developer I can be, mastering full-stack
-          development. After that, I plan to transition into AI development and
-          machine learning, exploring new technologies and shaping the future of
-          innovation.
+          My goal is to help the clients or company I work for by leveraging my
+          full-stack development expertise. I also aim to transition into AI and
+          machine learning, continuously learning and exploring new technologies
+          to drive innovation
         </p>
       </div>
       <div className="p-5" ref={(el) => sectionsRef.current.push(el)}>

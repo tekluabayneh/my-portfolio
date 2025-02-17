@@ -9,7 +9,7 @@ const Overview = () => {
   return (
     <section className="w-full h-auto py-10 flex flex-col gap-20 pt-20">
       <div className="w-full flex flex-col md:flex-row px-10 xl:gap-10 md:gap-3">
-        <p className="text-2xl pl-3 pb-10 md:pb-0">
+        <p className="text-2xl md:pl-3 pb-10 md:pb-0">
           My passion for coding, problem-solving, and building seamless systems
           positions me uniquely to deliver cutting-edge applications that drive
           growth and performance.

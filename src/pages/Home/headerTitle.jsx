@@ -14,7 +14,7 @@ const HeaderTitle = () => {
   }, []);
   return (
     <div
-      className="xs:text-5xl  rotate-2 md:text-8xl font-bold flex flex-wrap items-center justify-center pt-24 pl-7"
+      className="text-3xl  rotate-2 md2:text-6xl  md1:text-8xl font-bold flex flex-wrap items-center justify-center pt-24 pl-7"
       ref={containerRef}
       style={{ display: "flex", gap: "4px" }}
     >

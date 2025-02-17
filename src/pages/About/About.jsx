@@ -10,11 +10,11 @@ const About = () => {
       
       
     >
-      <h1 className="xs:text-4xl md:text-6xl pt-12 md:px-10">
+      <h1 className="text-4xl md:text-6xl pt-12 md:px-10">
         Helping businesses grow with end-to-end web development
       </h1>
 
-      <h1 className="pl-5 py-20 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-400 to-pink-400">
+      <h1 className="pl-5 py-20 text-2xl md2:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-400 to-pink-400">
         Hi again, I'm Teklu.
       </h1>
 

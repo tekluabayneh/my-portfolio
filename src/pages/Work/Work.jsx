@@ -21,27 +21,28 @@ const Work = () => {
   const { magneticRef, magneteiccontainerRef } = useMagneticEffect();
 
   return (
-    <section className="w-full h-auto px-10 ">
+    <section className="w-full h-auto px-2 md2:px-10 ">
       <div className="w-full h-5/6">
-        <h1 className="text-7xl pt-5 md:p-20">
+        <h1 className="text-4xl md:text-7xl pt-5 md:p-20">
           Real Results: <br /> My Portfolio
         </h1>
       </div>
 
-      <div className="w-full px-6">
+      <div className="w-full md:px-6 overflow-hidden">
         <div
           ref={(el) => (magneteiccontainerRef.current[0] = el)}
-          className="relative w-full h-[70vh] px-5 flex flex-col md:flex-row justify-center gap-5 items-center
+          className="overflow-hidden relative w-full h-[70vh] px-5 flex flex-col md:flex-row justify-center md:gap-5 items-center
          bg-slate-100 my-20 rounded-lg cursor-pointer transition-all hover:scale-95"
         >
           <div className="flex-1">
             <img
-              className="bg-center bg-cover w-full h-full object-contain"
+              className="bg-center bg-cover   w-[30rem] h-full md:w-full  object-contain"
               src={portfolio1}
               alt="portfolio1"
             />
           </div>
-          <div className="flex-1">
+
+          <div className="flex-1 ">
             <button
               ref={(el) => (magneticRef.current[0] = el)}
               className="absolute font-medium top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-custom2 text-black rounded-full w-20 h-20"
@@ -53,11 +54,11 @@ const Work = () => {
                 view live
               </Link>
             </button>
-            <h1 className="xs:text-2xl md:text-4xl xs:text-balance py-3 xs:text-center md:text-start">
+            <h1 className="xs:text-2xl md:text-4xl xs:text-balance p-1 md:py-3 xs:text-center md:text-start">
               RESTful API for JSON Data
             </h1>
 
-            <p className="xs:text-md">
+            <p className="text-xs md:text-sm">
               A simple <strong>RESTful API</strong> built with{" "}
               <strong>Node.js</strong> and <strong>Express</strong> to deliver
               <strong>JSON data</strong> with <strong>CRUD operations</strong>.
@@ -77,15 +78,15 @@ const Work = () => {
             </GsapMagnetic>
           </div>
         </div>
-
+        {/*  */}
         <div
           ref={(el) => (magneteiccontainerRef.current[1] = el)}
-          className="w-full relative h-[70vh] px-5 flex flex-col md:flex-row justify-center gap-5 items-center
+          className="relative w-full h-[70vh] px-5 flex flex-col md:flex-row justify-center md:gap-5 items-center
          bg-slate-100 my-20 rounded-lg cursor-pointer transition-all hover:scale-95"
         >
           <div className="flex-1">
             <img
-              className="w-full h-full bg-center bg-cover object-contain"
+              className="bg-center bg-cover  w-[33rem] md:w-full h-full object-contain"
               src={portfolio3}
               alt=""
             />
@@ -102,11 +103,11 @@ const Work = () => {
                 view live
               </Link>
             </button>
-            <h1 className="xs:text-2xl md:text-4xl xs:text-balance py-3 xs:text-center md:text-start">
+            <h1 className="xs:text-2xl md:text-4xl xs:text-balance p-1 md:py-3 xs:text-center md:text-start">
               Apple-Inspired Website
             </h1>
 
-            <p className="xs:text-md">
+            <p className="text-xs md:text-sm">
               A<strong>responsive</strong> and{" "}
               <strong>modern Apple-inspired</strong> website built using{" "}
               <strong>React</strong>. This project showcases a{" "}
@@ -127,15 +128,15 @@ const Work = () => {
             </GsapMagnetic>
           </div>
         </div>
-
+        {/*  */}
         <div
           ref={(el) => (magneteiccontainerRef.current[2] = el)}
-          className="w-full relative h-[70vh] px-5 flex flex-col md:flex-row justify-center gap-5 items-center
+          className="relative w-full h-[70vh] px-5 flex flex-col md:flex-row justify-center md:gap-5 items-center
          bg-slate-100 my-20 rounded-lg cursor-pointer transition-all hover:scale-95"
         >
           <div className="flex-1">
             <img
-              className="bg-center bg-cover object-contain"
+              className="bg-center bg-cover  w-[33rem] md:w-full h-full object-contain"
               src={portfolio2}
               alt=""
             />
@@ -152,11 +153,11 @@ const Work = () => {
                 view live
               </Link>
             </button>
-            <h1 className="xs:text-2xl md:text-4xl xs:text-balance py-3 xs:text-center md:text-start">
+            <h1 className="xs:text-2xl md:text-4xl xs:text-balance p-1 md:py-3 xs:text-center md:text-start">
               Interactive Dashboard
             </h1>
 
-            <p className="xs:text-md">
+            <p className="text-xs md:text-sm">
               An interactive dashboard built with <strong>React</strong>,
               featuring a clean and responsive design. This frontend-only
               dashboard includes <strong>data visualization</strong> and{" "}
@@ -175,15 +176,15 @@ const Work = () => {
             </GsapMagnetic>
           </div>
         </div>
-
+        {/*  */}
         <div
           ref={(el) => (magneteiccontainerRef.current[3] = el)}
-          className="w-full relative h-[70vh] px-5 flex flex-col md:flex-row justify-center gap-5 items-center
+          className="relative w-full h-[70vh] px-5 flex flex-col md:flex-row justify-center md:gap-5 items-center
          bg-slate-100 my-20 rounded-lg cursor-pointer transition-all hover:scale-95"
         >
           <div className="flex-1">
             <img
-              className="bg-center bg-cover object-contain"
+              className="bg-center bg-cover  w-[33rem] md:w-full h-full object-contain"
               src={portfolio4}
               alt=""
             />
@@ -201,11 +202,11 @@ const Work = () => {
                 view live
               </Link>
             </button>
-            <h1 className="xs:text-2xl md:text-4xl xs:text-balance py-3 xs:text-center md:text-start">
+            <h1 className="xs:text-2xl md:text-4xl xs:text-balance p-1 md:py-3 xs:text-center md:text-start">
               Amazon-Inspired E-Commerce Website
             </h1>
 
-            <p className="xs:text-md">
+            <p className="text-xs md:text-sm">
               An <strong>Amazon-inspired e-commerce</strong> website built with{" "}
               <strong>React</strong> for the frontend and{" "}
               <strong>Firebase</strong> for the backend. It features{" "}
@@ -228,15 +229,15 @@ const Work = () => {
             </GsapMagnetic>
           </div>
         </div>
-
+        {/*  */}
         <div
           ref={(el) => (magneteiccontainerRef.current[4] = el)}
-          className="w-full relative h-[70vh] px-5 flex flex-col md:flex-row justify-center gap-5 items-center
+          className="relative w-full h-[70vh] px-5 flex flex-col md:flex-row justify-center md:gap-5 items-center
          bg-slate-100 my-20 rounded-lg cursor-pointer transition-all hover:scale-95"
         >
           <div className="flex-1">
             <img
-              className="bg-center bg-cover object-contain"
+              className="bg-center bg-cover  w-[33rem] md:w-full h-full object-contain"
               src={portfolio5}
               alt=""
             />
@@ -253,11 +254,11 @@ const Work = () => {
                 view live
               </Link>
             </button>
-            <h1 className="xs:text-2xl md:text-4xl xs:text-balance py-3 xs:text-center md:text-start">
+            <h1 className="xs:text-2xl md:text-4xl xs:text-balance p-1 md:py-3 xs:text-center md:text-start">
               Bootcamp Website
             </h1>
 
-            <p>
+            <p className="text-xs md:text-sm">
               A bootcamp platform built with <strong>HTML</strong>,{" "}
               <strong>Bootstrap</strong>, and a
               <strong>Node.js/Express backend</strong>. The website features{" "}

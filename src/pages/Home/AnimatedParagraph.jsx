@@ -24,7 +24,7 @@ const AnimatedParagraph = () => {
   }, []);
 
   return (
-    <p className="text-lg z-40" ref={paragraphRef}>
+    <p className="text-lg z-30" ref={paragraphRef}>
       I am actively contributing to open source projects, <br />
       building engaging and user-friendly websites, <br /> and tackling
       challenging problems that spark my creativity and <br /> passion for

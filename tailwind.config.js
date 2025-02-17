@@ -4,6 +4,8 @@ module.exports = {
     extend: {
       screens: {
         xs: "400px",
+        md1: "700px",
+        md2: "600px",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

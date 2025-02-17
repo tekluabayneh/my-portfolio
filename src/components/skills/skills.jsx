@@ -41,7 +41,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section className="w-full h-[130vh] md:h-screen py-30">
+    <section className="w-full h-[240vh] md1:h-[130vh] md:h-screen py-30">
       <h1 className="text-center py-20 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-pink-400 to-pink-400">
         My Skill set
       </h1>

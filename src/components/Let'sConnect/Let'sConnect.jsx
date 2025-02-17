@@ -5,7 +5,7 @@ import { GsapMagnetic } from "../GsapMagnetic";
 const LetsConnect = () => {
   return (
     <section className="w-full h-screen flex flex-col gap-5  px-5">
-      <h1 className="pl-5 text-2xl md:text-7xl font-bold px-12 md:pt-20">
+      <h1 className="md:pl-5 text-2xl md:text-7xl font-bold md:px-12 md:pt-20">
         Ready to Bring Your <br /> Vision to Life?
       </h1>
       <div className="w-full flex flex-col gap-5 relative">
@@ -22,25 +22,25 @@ const LetsConnect = () => {
         </div>
       </div>
 
-      <div className="w-full flex xs:gap-10 md:gap-20 items-center justify-start py-10 px-32 pt-20 xs:flex-col  md:flex-row">
+      <div className="w-full flex md:gap-20 items-center justify-start md:py-10 md:px-32 pt-20 flex-col  md:flex-row">
         <GsapMagnetic>
-          <button className="px-14 py-6 flex items-center justify-center rounded-3xl cursor-pointer ring-1 ring-gray-500">
+          <button className="m-2 px-8 md:px-14 py-6 flex items-center justify-center rounded-3xl cursor-pointer ring-1 ring-gray-500">
             tekluabayneh@gmail.com
           </button>
         </GsapMagnetic>
         <GsapMagnetic>
-          <button className="px-14 py-6 flex items-center justify-center rounded-3xl cursor-pointer ring-1 ring-gray-500">
+          <button className="m-5 px-14 py-6 flex items-center justify-center rounded-3xl cursor-pointer ring-1 ring-gray-500">
             0946276315
           </button>
         </GsapMagnetic>
       </div>
-      <div className="w-full flex justify-end xs:mb-52">
+      <div className="w-full flex justify-end mb-52 hidden md:block">
         <ul className="flex gap-5">
           <GsapMagnetic>
             <li className="text-xs capitalize cursor-pointer">
               <NavLink
                 target="_blank"
-                to={"https://www.linkedin.com/in/teklu-abayneh/"}
+                to={"https://www.linkedin.com/in/teklu-abayneh"}
               >
                 LinkedIn
               </NavLink>
