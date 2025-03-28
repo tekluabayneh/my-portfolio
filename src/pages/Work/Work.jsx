@@ -245,7 +245,8 @@ const Work = () => {
           <div className="flex-1">
             <button
               ref={(el) => (magneticRef.current[4] = el)}
-              className="absolute top-1/2 left-1/2 transform - translate-x-1/2 -translate-y-1/2 bg-white shadow-custom2 text-black rounded-full w-20 h-20"
+              className="bg-white absolute top-1/2 left-1/2 transform
+               -translate-x-1/2 -translate-y-1/2 shadow-custom2 text-black rounded-full w-20 h-20"
             >
               <Link
                 target="_blank"
