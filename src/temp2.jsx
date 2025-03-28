@@ -8,14 +8,14 @@ const Temp2 = () => {
 
   // Function to handle mouse movement
   const handleMouseMove = (e) => {
-    const mouseX = e.clientX; // Mouse X position
-    const mouseY = e.clientY; // Mouse Y position
+    const mouseX = e.clientX; 
+    const mouseY = e.clientY; 
 
     // Calculate transform properties based on mouse position
-    const rotateX = (mouseY / window.innerHeight - 0.5) * 30; // Rotation based on Y axis
-    const rotateY = (mouseX / window.innerWidth - 0.5) * -30; // Rotation based on X axis
-    const translateX = (mouseX / window.innerWidth - 0.5) * 50; // Translate on X axis
-    const translateY = (mouseY / window.innerHeight - 0.5) * 50; // Translate on Y axis
+    const rotateX = (mouseY / window.innerHeight - 0.5) * 30; 
+    const rotateY = (mouseX / window.innerWidth - 0.5) * -30; 
+    const translateX = (mouseX / window.innerWidth - 0.5) * 50; 
+    const translateY = (mouseY / window.innerHeight - 0.5) * 50; 
 
     // Update the transform style
     setTransformStyle({
