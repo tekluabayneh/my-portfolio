@@ -60,7 +60,6 @@ const Skills = () => {
           <span>Node.js</span>
           <span>Express.js</span>
           <span>Tailwind</span>
-          <span>CSS</span>
           <span>Bootstrap</span>
           <span>jQuery</span>
         </div>
