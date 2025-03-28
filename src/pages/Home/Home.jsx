@@ -8,10 +8,10 @@ import HeaderTitle from "./headerTitle";
 const Home = () => {
   return (
     <main>
-      <section className="w-full h-5/6 relative ">
+      <section className="w-full h-5/6 relative overflow-hidden">
         <HeaderTitle />
         <div className="hidden md:block">
-          <AnimationBall />
+          {/* <AnimationBall /> */}
         </div>
         <div className="text-gray-500 float-right flex  items-center pt-27 px-10 flex-col z-10">
           <span className="pt-12">
