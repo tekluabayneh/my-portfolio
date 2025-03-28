@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { SplashCursor } from "../../components/HeroAnimation";
 const HeaderTitle = () => {
   const containerRef = useRef(null);
   useEffect(() => {
@@ -18,6 +19,8 @@ const HeaderTitle = () => {
       ref={containerRef}
       style={{ display: "flex", gap: "4px" }}
     >
+      <SplashCursor />
+
       {/* First Line */}
       <div style={{ display: "flex", gap: "4px" }}>
         <span className="capitalize">f</span>
