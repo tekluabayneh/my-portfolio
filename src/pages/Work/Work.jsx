@@ -48,7 +48,9 @@ const Work = () => {
               className="absolute font-medium top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-custom2 text-black rounded-full w-20 h-20"
             >
               <Link
-                to={"https://iridescent-sherbet-cc90d7.netlify.app"}
+                to={
+                  "https://kukan-api-git-main-tekluabaynehs-projects.vercel.app"
+                }
                 target="_blank"
               >
                 view live

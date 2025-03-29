@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import useWindowWidth from "../../utils/windowWidth";
 import MobileHeader from "./MobileHeader";
 import { NavLink } from "react-router-dom";
-import img from "../../assets/images/logoimg.AVIF";
+import img from "../../assets/images/logoimg.avif";
 import { GsapMagnetic } from "../GsapMagnetic";
 const Mainheader = () => {
   const menuRef = useRef(null);
