@@ -49,9 +49,11 @@ const Skills = () => {
       <div className="w-full grid xs:grid-cols-1 md:grid-cols-4 gap-1">
         <div className="flex flex-col gap-5 skill-list">
           <h1 className="text-2xl">Languages</h1>
-          <span>JavaScript</span>
           <span>HTML5</span>
           <span>CSS3</span>
+          <span>Tailwindcss</span>
+          <span>JavaScript</span>
+          <span>TypeScript(new...)</span>
         </div>
 
         <div className="flex flex-col gap-5 skill-list">
@@ -59,8 +61,6 @@ const Skills = () => {
           <span>React.js</span>
           <span>Node.js</span>
           <span>Express.js</span>
-          <span>Tailwind</span>
-          <span>TypeScript(new...)</span>
         </div>
 
         <div className="flex flex-col gap-5 skill-list">
