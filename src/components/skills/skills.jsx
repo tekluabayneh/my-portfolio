@@ -60,16 +60,16 @@ const Skills = () => {
           <span>Node.js</span>
           <span>Express.js</span>
           <span>Tailwind</span>
-          <span>Bootstrap</span>
-          <span>jQuery</span>
+          <span>TypeScript(new...)</span>
         </div>
 
         <div className="flex flex-col gap-5 skill-list">
           <h1 className="text-2xl">Tools & Technologies</h1>
-          <span>GSAP</span>
           <span>Git</span>
           <span>GitHub</span>
           <span>NPM</span>
+          <span>Docker</span>
+          <span>VS-code & neovim(new...)</span>
           <span>Postman (for API testing)</span>
         </div>
 

@@ -51,7 +51,7 @@ const ContactForm = ({ handelMessagePopUp }) => {
           contact details
         </h3>
         <div className="flex items-start flex-col">
-          <samp className="font-medium text-gray-400">Email</samp>
+          <samp className="font-medium text-gray-400 shadow-sm">Email</samp>
           <h1>tekluabayneh@gmail.com</h1>
         </div>
         <div className="flex items-start flex-col">
