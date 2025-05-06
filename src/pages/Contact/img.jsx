@@ -3,5 +3,13 @@ import portfolio2 from "../../assets/PortfolioImages/2.jpeg";
 import portfolio3 from "../../assets/PortfolioImages/3.png";
 import portfolio4 from "../../assets/PortfolioImages/4.png";
 import portfolio5 from "../../assets/PortfolioImages/5.png";
+import portfolio6 from "../../assets/PortfolioImages/6.png";
 
-export { portfolio1, portfolio2, portfolio3, portfolio4, portfolio5 };
+export {
+  portfolio1,
+  portfolio2,
+  portfolio3,
+  portfolio4,
+  portfolio5,
+  portfolio6,
+};
