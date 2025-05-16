@@ -1,6 +1,7 @@
 import React from "react";
 import work1 from "../../assets/PortfolioImages/1.jpeg";
 import work2 from "../../assets/PortfolioImages/3.png";
+import { portfolio6 } from "../../pages/Contact/img";
 import { Link, NavLink } from "react-router-dom";
 import { GsapMagnetic } from "../GsapMagnetic";
 import useMagneticEffect from "../../pages/Work/animateLiveBtn";
@@ -54,7 +55,9 @@ const Overview = () => {
             >
               <Link
                 target="_blank"
-                to={"https://iridescent-sherbet-cc90d7.netlify.app"}
+                to={
+                  "https://kukan-api-git-main-tekluabaynehs-projects.vercel.app"
+                }
               >
                 view live
               </Link>
@@ -66,6 +69,15 @@ const Overview = () => {
               showcase their products to seamlessly use this service for their
               needs.
             </p>
+
+            <p className="text-xs md:text-sm">
+              A simple <strong>RESTful API</strong> built with{" "}
+              <strong>Node.js</strong> and <strong>Express</strong> to deliver
+              <strong>JSON data</strong> with <strong>CRUD operations</strong>.
+              It provides an easy way to manage
+              <strong>data</strong> and is perfect for integrating with{" "}
+              <strong>front-end applications</strong>.
+            </p>
           </div>
         </div>
         <div
@@ -75,7 +87,7 @@ const Overview = () => {
           <div className="w-full h-80 overflow-hidden">
             <img
               className="w-full h-full bg-center bg-cover hover:scale-105 cursor-pointer transition-all"
-              src={work2}
+              src={portfolio6}
               alt="portfolio image"
             />
           </div>
@@ -83,22 +95,35 @@ const Overview = () => {
           <div className="w-full flex flex-col gap-3">
             <button
               ref={(el) => (magneticRef.current[6] = el)}
-              className="bg-white absolute top-1/2 left-1/2 transform
-     -translate-x-1/2 -translate-y-1/2 shadow-custom2 text-black rounded-full w-20 h-20"
+              className="absolute font-medium top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-custom2 text-black rounded-full w-20 h-20 "
             >
               <Link
+                to={"https://micro-task-marketplace-1.onrender.com"}
                 target="_blank"
-                to={"https://bejewelled-blancmange-eeaf5c.netlify.app"}
               >
                 view live
               </Link>
             </button>
             <h1 className="py-2 text-2xl pl-3">Apple Clone</h1>
             <hr className="w-full h-[2px] bg-gray-400 text-center" />
-            <p>
-              A simplified version of Apple's website, featuring clean design,
-              responsive layout, and basic functionality.
-            </p>
+            <div className="text-xs md:text-sm">
+              <strong> AI Chatbot:</strong> In-app assistant for platform
+              guidance.
+              <br />
+              <strong>🧠 AI Matching:</strong> Suggests freelancers based on
+              project needs.
+              <br />
+              <strong>⚙️ Tech Stack:</strong>
+              <br />
+              <strong>Frontend:</strong> React.js, Tailwind CSS
+              <br />
+              <strong>Backend:</strong> Node.js + Express, JWT Auth
+              <br />
+              <strong>Database:</strong> MySQL
+              <br />
+              <strong>Extras:</strong> OpenAI API (chatbot), React Query, Toast
+              UI
+            </div>
           </div>
         </div>
       </div>
