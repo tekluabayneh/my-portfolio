@@ -73,9 +73,10 @@ const Skills = () => {
           <span>Postman (for API testing)</span>
         </div>
 
-        <div className="flex-col gap-5 skill-list">
+        <div className="gap-5 skill-list flex flex-col">
           <h1 className="text-2xl">Databases</h1>
           <span>MySQL</span>
+          <span>PostgreSQL</span>
         </div>
       </div>
     </section>
