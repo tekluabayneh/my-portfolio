@@ -39,6 +39,16 @@ const AboutBentoGrid = () => {
         <h1 className="font-medium text-4xl">Projects:</h1>
         <p className="p-2">
           <span className="font-medium text-gray-400 underline">
+            Micro-Task Marketplace:
+          </span>{" "}
+          Built an AI-driven freelancing platform with real-time matching and an
+          in-app chatbot using the OpenAI API. Developed secure JWT and
+          OAuth-based authentication, scalable REST APIs, and a responsive UI
+          with React and Tailwind CSS. Optimized performance and user experience
+          with React Query and Toast UI.
+        </p>
+        <p className="p-2">
+          <span className="font-medium text-gray-400 underline">
             Amazon E-Commerce Clone:
           </span>{" "}
           Built a functional e-commerce site with product listings, shopping
@@ -55,13 +65,6 @@ const AboutBentoGrid = () => {
         <p className="p-2">
           FreeCodeCamp Projects: Developed several web apps covering key
           concepts like CRUD operations, REST APIs, and front-end design.
-        </p>
-        <p className="p-2">
-          <span className="font-medium text-gray-400 underline">
-            Dashboard Website:
-          </span>{" "}
-          Designed a custom dashboard for displaying interactive metrics and
-          data, focusing on smooth UI/UX and dynamic visualization.
         </p>
       </div>
       <div className="p-5" ref={(el) => sectionsRef.current.push(el)}>
